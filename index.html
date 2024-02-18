@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Music Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    
+    <header class="header fijo">
+            <div class="contenedor contenido-header">
+                <h1>X MUSIC FESTIVAL</h1>
+
+                <nav class="nvg-bar">
+                    <a href="#lineup">Lineup</a>
+                    <a href="#galeria">Galeria</a>
+                    <a href="#boletos">Boletos</a>
+                </nav>
+            </div>
+    </header>
+
+
+
+    <section class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>X Music Festival</h2>
+                <p>Fecha: Unkown. Location: Unkown</p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="contenedor sobre-festival">
+        <div class="imagen-festival">
+            <picture>
+                <source srcset="build/img/travis.avif"  type="image/avif">
+                <source srcset="build/img/travis.webp"  type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/travis.jpg" alt="Imagen Travis">
+            </picture>
+        </div>
+        <div class="contenido-festival">
+            <h2>X Music Festival</h2>
+            <p class="fecha">Fecha: Unkown. Location: Unkown</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quae sint rerum, itaque omnis culpa odit assumenda tempora, expedita recusandae atque accusamus, quam eveniet quis officia ipsam eligendi aliquid perferendis.</p>
+        </div>
+    </section>
+
+    <section id="lineup" class="lineup">
+        <h3>Line Up</h3>
+
+        <p class="dia">Fecha: Unkown</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario kanye bg-verde">
+                <p class="nombre-escenario">Escenario Principal</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>NAS</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Drake</span>
+                    </li>
+                    <li>
+                        20:00 | <span>21 Savage</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Kid Cudi</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Kendrick Lamar</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Kanye West</span>
+                    </li>
+                    
+                </ul>
+            </div> <!--.escenario-->
+
+            <div class="escenario eminem bg-marron">
+                <p class="nombre-escenario">Escenario Eminem</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Lil Dickie</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Post Malone</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Ice T</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Tainy</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Usher</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Eminem</span>
+                    </li>
+                    
+                </ul>
+            </div> <!--.escenario-->
+        </div> <!--.escenarios-contenedor-->
+    </section>
+
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galeria</h3>
+        
+        <ul class="galeria-imagenes">
+
+        </ul>
+    </section>
+
+    <section id="boletos" class="boletos contenedor">
+        <h2>Boletos</h2>
+        <div class="contenedor-boletos">
+            <div class="boleto-contenedor contenedor">
+                <h3>Pase Sencillo</h3>
+                <div class="boleto-contenido">
+                    <header class="pase-header">
+                        <p>Incluye</p>
+                    </header>
+            
+                    <div class="pase-body">
+                        <ul>
+                            <li>Acceso a ambos escenarios</li>
+                            <li>Comida y bebida</li>
+                        </ul>
+                    </div>
+            
+                    <footer class="pase-footer">
+                        <p>$100</p>
+                    </footer>
+                </div>
+            </div> <!--Boleto-->
+
+            <div class="boleto-contenedor contenedor">
+                <h3>Pase VIP</h3>
+                <div class="boleto-contenido">
+                    <header class="pase-header">
+                        <p>Incluye</p>
+                    </header>
+            
+                    <div class="pase-body">
+                        <ul>
+                            <li>Acceso a ambos escenarios</li>
+                            <li>Comida y bebida</li>
+                            <li>Meet & Greet</li>
+                            <li>Merchandising</li>
+                        </ul>
+                    </div>
+            
+                    <footer class="pase-footer">
+                        <p>$200</p>
+                    </footer>
+                </div>
+            </div> <!--Boleto-->
+        </div>    
+    </section>
+
+    <footer class="footer">
+        <p>X Music Festival. Todos los derechos reservados</p>
+    </footer>
+
+
+    <script src="build/js/app.js"></script>
+</body>
+</html>

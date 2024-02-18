@@ -1,0 +1,81 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.lineup{
+    padding: 0 0 5rem 0;
+    h3, p{
+        text-align: center;
+    }
+    .dia{
+        text-transform: uppercase;
+        font-size: 500;
+    }
+}
+
+.escenarios-contenedor{
+    @include m.tablet {
+        @include m.grid (2, 5rem);
+    }
+}
+
+.escenario{
+    padding: 3rem 0 0 0;
+    margin: 0;
+    @include m.tablet {
+        margin: 0;
+    }
+    p{
+        color: v.$blanco;
+        font-weight: 700;
+        font-size: 3.5rem;
+        margin: 0 0 3rem 0;
+
+        &:after{
+            content: '';
+            display: block;
+            width: 20rem;
+            height: 10rem;
+            background-size: 15rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 2rem auto 0 auto;
+        }
+    }
+    color: v.$blanco;
+}
+
+.kanye .nombre-escenario:after {
+    background-image: url(../img/Kanye-West-Logo.png);
+}
+
+.eminem .nombre-escenario:after {
+    background-image: url(../img/Logo-Eminem.png);
+}
+
+.bg-verde{
+    background-color: v.$verde;
+
+    li:nth-child(odd) {
+        background-color: darken(v.$verde, 2%);
+    }
+}
+
+.bg-marron{
+    background-color: v.$marron;
+
+    li:nth-child(odd) {
+        background-color: darken(v.$marron, 4%);
+    }
+}
+
+.calendario{
+    @include m.clearList;
+    font-size: 2.2rem;
+    li{
+        padding: 2.5rem;
+        font-weight: 700;
+        span{
+            font-weight: 400;
+        }
+    }
+}

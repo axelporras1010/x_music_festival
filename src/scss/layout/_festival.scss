@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.sobre-festival{
+    padding: 5rem 0;
+    @include m.tablet {
+        @include m.grid(2, 5rem);
+    }
+}
+
+.imagen-festival{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-festival{
+    h2{
+        margin-top: 3rem;
+        font-size: 5rem;
+        @include m.tablet {
+            margin: 0;
+        }
+    }
+    .fecha{
+        color: v.$marron;
+        font-weight: 700;
+        font-size: 3.1rem;
+    }
+}
+    

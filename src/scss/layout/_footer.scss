@@ -1,0 +1,13 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer{
+    padding: 2rem;
+    background-color: v.$verde;
+    text-align: center;
+    p{
+        color: v.$blanco;
+        margin: 0;
+        font-weight: 700;
+    }
+}
